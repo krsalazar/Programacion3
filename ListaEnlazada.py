@@ -16,7 +16,7 @@ class ListaEnlazada:
             return
         ultimo_nodo = self.head
         while ultimo_nodo.next:
-            ultimo_nodo = ultimo_nodo.next
+            ultimo_nodo = ultimo_nodo.siguiente
         ultimo_nodo.next = nuevo_nodo
 
     #Unicamente muestra en pantalla el contenido de la lista
@@ -24,7 +24,7 @@ class ListaEnlazada:
         actual_nodo = self.head
         while actual_nodo:
             print(actual_nodo.dato, end=" -> ")
-            actual_nodo = actual_nodo.next
+            actual_nodo = actual_nodo.siguiente
         print("None")
 
 # Crea la lista enlazada con valores definidos por el usuario
