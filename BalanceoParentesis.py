@@ -13,10 +13,10 @@ def BalanceoParentesis(cadena):
             pila.pop() #Si hay elementos, se elimina uno de la lista
     return not pila #Si la lista queda vacía, la cadena está balanceada
 
+if __name__ == "__main__":
+    cadena1 = "(1+1)-()"
 
-cadena1 = "(1+1)-()"
-
-if BalanceoParentesis(cadena1):
-    print('La cadena está balanceada')
-else:
-    print('La cadena no es balanceada')
+    if BalanceoParentesis(cadena1):
+        print('La cadena está balanceada')
+    else:
+        print('La cadena no es balanceada')
